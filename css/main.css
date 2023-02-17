@@ -88,13 +88,84 @@ textarea {
    ========================================================================== */
 
 body {
- font-family: 'Alata', sans-serif;
+  font-family: 'Alata', sans-serif;
+  box-sizing: border-box;
 }
- p {
+
+p {
   font-family: 'Nunito Sans', sans-serif;
- }
+}
 
+/********************* nav bar ****************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+  margin-top: 30px;
+  width: 100%;
+}
 
+.navbar-brand img {
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 30px;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #111;
+}
+
+/*********************** heading ***********************/
+
+.me {
+text-align: center;
+background-color: red;
+margin: 30px;
+padding: 40px;
+border-radius: 5%;
+}
+
+.me h2 {
+  margin: 30px
+}
+
+.me img {
+  border: 3px solid white;
+}
+
+/******************* projects *************************/
+
+#projects {
+  background-color: rgb(122, 122, 175);
+  text-align: center;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects .container {
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -189,9 +260,9 @@ body {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -202,6 +273,7 @@ body {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -269,4 +341,3 @@ body {
     page-break-after: avoid;
   }
 }
-

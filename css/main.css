@@ -87,10 +87,12 @@ textarea {
    Amira's custom styles
    ========================================================================== */
 
-.nav-item {
-  color: white;
+body {
+ font-family: 'Alata', sans-serif;
 }
-
+ p {
+  font-family: 'Nunito Sans', sans-serif;
+ }
 
 
 

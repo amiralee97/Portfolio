@@ -112,7 +112,6 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin-right: 30px;
   padding: 0;
 }
 
@@ -152,7 +151,7 @@ li a:hover {
 /******************* projects *************************/
 
 #projects {
-  margin-top: 70px;
+  margin-top: 20px;
   padding-top: 10px;
   background-color: rgb(122, 122, 175);
   text-align: center;
@@ -172,9 +171,9 @@ li a:hover {
   text-align: center;
   background-color: white;
   display: inline-block;
-  width: 400px;
+  width: 300px;
   margin: 20px;
-  padding: 20px;
+  padding: 40px 20px 50px 20px;
   height: 500px;
   vertical-align: top;
 }
@@ -191,8 +190,6 @@ button {
 #skills {
   margin-top: 60px;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* for md screen */
   place-items: center;
 }
 
@@ -353,22 +350,82 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+ nav ul {
+  margin-right: 30px;
+ }
 
+ .navbar-brand img {
+  margin-left: 30px;
+ }
+
+ .me {
+  margin: 20px 40px 0 40px;
+ }
+
+ #projects .container {
+  padding: 40px 50px 50px 50px;
+ }
+
+ #skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px;
+ }
+
+ #skills .tools {
+  padding-bottom: 155px;
+ }
+
+ #about {
+  margin: 50px;
+ }
+
+ .social-icons {
+  margin-bottom: -25px;
+ }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .me {
+    margin: 20px 50px 0 50px;
+   }
   
+   #projects {
+    margin-bottom: 40px;
+   }
+   
+   #projects .container {
+    padding: 40px 50px 50px 50px;
+   }
+
+   #skills {
+    margin-top: 30px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .me {
+    margin: 20px 60px 0 60px;
+   }
+
+   #projects h2 {
+    padding: 30px;
+   }
+
+   #about {
+    margin-top: 30px;
+   }
+   #skills {
+    margin: 50px;
+  }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
 
 }
 

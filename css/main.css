@@ -145,6 +145,8 @@ li a:hover {
 
 .me img {
   border: 3px solid white;
+  height: auto;
+  max-width: 100%;
 }
 
 /******************* projects *************************/
@@ -159,6 +161,11 @@ li a:hover {
 
 #projects h2 {
   text-align: center;
+}
+
+#projects img {
+  height: auto;
+  max-width: 100%;
 }
 
 #projects .container {
@@ -190,7 +197,59 @@ button {
 }
 
 #skills h4 {
-  padding-left: 30px;
+  padding-left: 40px;
+}
+
+#skills ul {
+  list-style-type: circle;
+}
+
+#skills ul li::marker  {
+  color: red;
+}
+
+/*********************** about me **********************/
+
+#about {
+  margin: 40px;
+  text-align: justify;
+}
+
+#about h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+#about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************** contact ****************/
+
+#contact {
+  margin-top: 80px;
+text-align: center;
+}
+
+#contact a {
+  text-decoration: none;
+  padding: 30px;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -292,6 +351,26 @@ button {
   /* Style adjustments for high resolution devices */
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
 
 
 /* ==========================================================================

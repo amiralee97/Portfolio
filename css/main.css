@@ -368,15 +368,15 @@ footer {
   padding: 40px 50px 50px 50px;
  }
 
- #skills {
+ #skills aside ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 60px;
+  margin: 30px;
  }
 
- #skills .tools {
-  padding-bottom: 155px;
- }
+ #skills aside ul li {
+  padding-right: 50px;
+ } 
 
  #about {
   margin: 50px;

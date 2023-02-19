@@ -90,6 +90,8 @@ textarea {
 body {
   font-family: 'Alata', sans-serif;
   box-sizing: border-box;
+  background-color: #a2d0cf;
+  
 }
 
 p {
@@ -102,7 +104,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   clear: both;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -119,23 +121,78 @@ nav li {
   float: left;
 }
 
+
 nav li a {
   padding: 14px 16px;
   text-decoration: none;
+  color: #1B3069;
+  text-transform: uppercase;
 }
 
 li a:hover {
-  color: #111;
+  background-color: #1B3069;
+  color: #a2d0cf;
 }
 
-/*********************** heading ***********************/
+/**************** top section *************************/
+
+.top {
+  text-align: center;
+  padding: 60px 10px;
+  color: #1B3069;
+}
+
+.top span {
+  text-transform: uppercase;
+}
+
+.top h2 {
+  font-size: 1.5rem;
+  padding: 30px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+  /* Animation property */
+  .top span .emoji {
+    animation: wiggle 2s linear infinite;
+  }
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  
+/*********************** about me ***********************/
 
 .me {
   text-align: center;
-  background-color: red;
+  background-image: linear-gradient(to bottom right,#1e3579, #8895bc);
+  box-shadow: 0 0 10px 10px #3851df54;
   margin: 30px;
   padding: 40px;
-  border-radius: 5%;
+  border-radius: 30px;
+  color: #ffd175;
 }
 
 .me h2 {
@@ -146,6 +203,7 @@ li a:hover {
   border: 3px solid white;
   height: auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 /******************* projects *************************/
@@ -153,13 +211,14 @@ li a:hover {
 #projects {
   margin-top: 20px;
   padding-top: 10px;
-  background-color: rgb(122, 122, 175);
+  background-color: #7896c3;
   text-align: center;
   display: inline-block;
 }
 
 #projects h2 {
   text-align: center;
+  color: #262626;
 }
 
 #projects img {
@@ -221,6 +280,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+ object-fit: cover;
 }
 
 /************** contact ****************/
@@ -404,13 +464,38 @@ footer {
    #skills {
     margin-top: 30px;
   }
+
+  .top h1 {
+    font-size: 2.5rem;
+  }
+  .top h2 {
+    font-size: 2rem;
+    margin: 0 50px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .me {
-    margin: 20px 60px 0 60px;
-   }
+  
+  #about  {
+    display: flex;
+  }
+  #about img {
+    margin: 20px 40px 20px 40px;
+  
+  }
+  #about #text p {
+    margin: 50px;
+  }
+  
+  #contact {
+    float: left;
+  }
+
 
    #projects h2 {
     padding: 30px;
@@ -422,25 +507,38 @@ footer {
    #skills {
     margin: 50px;
   }
-
+  .top h2 {
+    font-size: 2rem;
+    margin: 0 100px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-#about  {
-  display: flex;
-}
 #about img {
-  margin: 20px 40px 20px 40px;
-}
-#about #text p {
-  margin: 50px;
-}
+    margin: 20px 40px 20px 40px;
+    border-radius: 50%;
+  }
+  .navbar-brand img {
+    width: 140px;
+    height: 140px;
+  }
 
-#contact {
-  float: left;
+  nav {
+    margin-top: 40px;
+  }
+  .top h1 {
+    font-size: 3.5rem;
+  }
+  .top h2 {
+    font-size: 2.5rem;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+.top {
+  margin-bottom: 110px
 }
-
+ 
 }
 
 

@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:wght@300;400;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/5069e07ff6.css" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/5069e07ff6.js" crossorigin="anonymous"></script>
 
   <meta name="theme-color" content="#fafafa">
@@ -32,7 +33,7 @@
     <div class="container">
       <nav>
         <a class="navbar-brand" href="#about">
-          <img src="img/logo.png" alt="Logo" width="90" height="90" class="inline">
+          <img src="img/logo.png" alt="Logo" width="90" height="90" class="active">
         </a>
         <ul>
           <li>
@@ -48,16 +49,19 @@
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
+      
       </nav>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+
     <section class="top">
-      <h1>Hey, I'm <span>Amira Lee</span> ! <span class="emoji">👋🏽</span></h1>
+      <h1>Hey, I'm <span>Amira Lee</span> ! <i class="fa-regular fa-hand fa-shake" style="--fa-animation-duration: 5s;  --fa-animation-iteration-count: infinite;"></i></h1>
       <h2>I'm a front-end developer who builds responsive and accesible sites for the web.</h2>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Projects</h2> 
         <div class="container">
           <img src="img/super-sticky-notes.png" alt="Screenshot of Sticky note app" class="" style="width:300px">
           <h3>Super Sticky Notes</h3>
@@ -178,22 +182,22 @@
 
     <section id="contact">
       <h2>Let's connect</h2>
-      <a href="">amiralee97@gmail.com
+      <a href="mailto:amiralee97@gmail.com" class="email">amiralee97@gmail.com
       </a>
 
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/amira-lee-4030bb1b9/">
-          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+          <i class="fa-brands fa-linkedin-in fa-xl fa-bounce"></i>
         </a>
         <a href="https://github.com/amiralee97">
-          <i class="fa-brands fa-github fa-xl"></i>
+          <i class="fa-brands fa-github fa-xl fa-bounce"></i>
         </a>
       </div>
 
     </section>
 
     <footer>
-      <h5>Coded by <span>Amira Lee</span> with love | ©2023</h5>
+      <h3>Coded by <span>Amira Lee</span> with love | ©2023</h3>
     </footer>
 
 

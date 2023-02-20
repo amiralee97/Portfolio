@@ -247,21 +247,24 @@ button:hover {
 /*********************** about me **********************/
 
 
-#about h2 {
+.me h2 {
   text-align: center;
   padding: 30px;
+  margin: 30px
 }
 
-#about img {
-  display: block;
+.me img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  border: 3px solid white;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 20px;
 }
 
-#about {
+.me {
   text-align: center;
   margin: 30px;
   padding: 40px;
@@ -270,9 +273,11 @@ button:hover {
   font-size: 1.25rem;
 }
 
-.me h2 {
-  margin: 30px
+.me p {
+  text-align: left;
+  margin-left: 30px;
 }
+
 
 /************** contact ****************/
 
@@ -433,6 +438,10 @@ footer {
     margin: 50px;
   }
 
+  #about img {
+    width: 80%;
+  }
+
   .social-icons {
     margin-bottom: -25px;
   }
@@ -448,6 +457,10 @@ footer {
 
   .me {
     margin: 20px 50px 0 50px;
+  }
+
+  #about img {
+    width: 60%;
   }
 
   #projects {
@@ -492,11 +505,6 @@ footer {
   }
 
 
-  #about img {
-    margin: 20px 40px 20px 40px;
-
-  }
-
   #about #text p {
     margin: 50px;
   }
@@ -515,8 +523,14 @@ footer {
 
   #about {
     margin-top: 30px;
+    display: flex;
   }
-
+ #about img {
+    width: 40%;
+    height: 100%;
+    margin-top: 15%;
+    margin-right: 30px;
+  }
   #skills {
     margin: 50px;
   }
@@ -530,7 +544,9 @@ footer {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #about img {
-    margin: 20px 40px 20px 40px;
+    margin-top: 10%;
+    width: 40%;
+    margin-right: 20px;
   }
 
   .navbar-brand img {
@@ -561,9 +577,6 @@ footer {
     height: 580px;
     width: 350px;
     font-size: 1.3rem;
-  }
-  #about {
-    display: flex;
   }
 
 }

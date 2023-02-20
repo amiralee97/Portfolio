@@ -250,7 +250,8 @@ button:hover {
 .me h2 {
   text-align: center;
   padding: 30px;
-  margin: 30px
+  margin: 30px;
+  border-bottom: 2px solid #1B3069;
 }
 
 .me img {
@@ -276,6 +277,7 @@ button:hover {
 .me p {
   text-align: left;
   margin-left: 30px;
+  padding-top: 30px;
 }
 
 
@@ -462,6 +464,13 @@ footer {
   #about img {
     width: 60%;
   }
+  #about p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+  #about h2 {
+    font-size: 2rem;
+  }
 
   #projects {
     margin-bottom: 40px;
@@ -525,6 +534,13 @@ footer {
     margin-top: 30px;
     display: flex;
   }
+  #about h2 {
+    font-size: 2.3rem;
+  }
+  #about p {
+    font-size: 1.43rem;
+    line-height: 2.5rem;
+  }
  #about img {
     width: 40%;
     height: 100%;
@@ -545,7 +561,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   #about img {
     margin-top: 10%;
-    width: 40%;
+    width: 35%;
     margin-right: 20px;
   }
 
@@ -579,6 +595,15 @@ footer {
     font-size: 1.3rem;
   }
 
+  #projects h2 {
+    font-size: 2.5rem;
+  }
+  #about h2 {
+    font-size: 2.5rem;
+  }
+  #about p {
+    font-size: 1.5rem;
+  }
 }
 
 

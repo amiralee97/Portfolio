@@ -172,6 +172,7 @@ li a:hover {
   margin-left: 30px;
   margin-right: 30px;
   border-bottom: 4px solid #ffd175;
+  text-transform: uppercase;
 }
 
 #projects img {
@@ -227,15 +228,19 @@ button:hover {
 /********************** skills *******************/
 
 #skills {
-  margin-top: 40px;
+  margin: 60px;
   display: grid;
   place-items: center;
   color: #1B3069;
+  background-color: #ffd175d4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px #8db5b4;
 }
 
 #skills h2 {
   padding: 30px;
-  border-bottom: 4px solid #ff8709;
+  border-bottom: 4px solid #7896c3;
+  text-transform: uppercase;
 }
 
 #skills ul {
@@ -243,7 +248,7 @@ button:hover {
 }
 
 #skills ul li::marker {
-  color: #ff8709;
+  color: #7896c3;
 }
 
 /*********************** about me **********************/
@@ -254,6 +259,7 @@ button:hover {
   padding: 30px;
   margin: 30px;
   border-bottom: 4px solid #ff8709;
+  text-transform: uppercase;
 }
 
 .me img {
@@ -572,7 +578,7 @@ footer {
   }
   #skills aside ul li {
     padding-right: 70px;
-    font-size: 1.25rem;
+    font-size: 1.12rem;
   }
 }
 
@@ -633,7 +639,10 @@ footer {
   }
   #skills aside ul li {
     padding-right: 90px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  #skills {
+    margin: 70px;
   }
 }
 

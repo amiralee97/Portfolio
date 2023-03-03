@@ -306,6 +306,11 @@ button:hover {
   padding-top: 30px;
 }
 
+.resume {
+  text-decoration: none;
+  color:#1B3069;
+  padding-left: -30px;
+}
 
 /************** contact ****************/
 

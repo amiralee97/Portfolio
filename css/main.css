@@ -333,6 +333,10 @@ button:hover {
   text-decoration: underline;
 }
 
+#resume {
+  
+}
+
 #contact i {
   font-size: 2rem;
   color: #1B3069;
@@ -452,6 +456,7 @@ background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
 (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

@@ -228,6 +228,7 @@ button {
   border:#1e3579;
   box-shadow: 0 0 3px 3px rgba(123, 123, 123, 0.241);
   transition: .2s;
+  background-color: white;
 }
 
 button:hover {
